@@ -45,7 +45,7 @@ allprojects {
             withType<MavenPublication> {
                 artifact(javadocJar)
                 pom {
-                    groupId="io.github.mirzemehdi"
+                    groupId="io.github.Airos478963"
                     name.set("KMPNotifier")
                     description.set(" Kotlin Multiplatform Push Notification Library targeting ios and android")
                     licenses {
@@ -54,14 +54,14 @@ allprojects {
                             url.set("https://opensource.org/licenses/Apache-2.0")
                         }
                     }
-                    url.set("mirzemehdi.github.io/KMPNotifier/")
+                    url.set("Airos478963.github.io/KMPNotifier/")
                     issueManagement {
                         system.set("Github")
-                        url.set("https://github.com/mirzemehdi/KMPNotifier/issues")
+                        url.set("https://github.com/Airos478963/KMPNotifier/issues")
                     }
                     scm {
-                        connection.set("https://github.com/mirzemehdi/KMPNotifier.git")
-                        url.set("https://github.com/mirzemehdi/KMPNotifier")
+                        connection.set("https://github.com/Airos478963/KMPNotifier.git")
+                        url.set("https://github.com/Airos478963/KMPNotifier")
                     }
                     developers {
                         developer {
