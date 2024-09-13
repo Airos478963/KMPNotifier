@@ -20,7 +20,7 @@ plugins {
 
 
 allprojects {
-    group = "io.github.Airos478963"
+    group = "com.github.Airos478963"
     version = project.properties["kmpNotifierVersion"] as String
 
     val gpgKeySecret = gradleLocalProperties(rootDir).getProperty("gpgKeySecret")
@@ -45,7 +45,7 @@ allprojects {
             withType<MavenPublication> {
                 artifact(javadocJar)
                 pom {
-                    groupId="io.github.Airos478963"
+                    groupId="com.github.Airos478963"
                     name.set("KMPNotifier")
                     description.set(" Kotlin Multiplatform Push Notification Library targeting ios and android")
                     licenses {
@@ -54,7 +54,7 @@ allprojects {
                             url.set("https://opensource.org/licenses/Apache-2.0")
                         }
                     }
-                    url.set("Airos478963.github.io/KMPNotifier/")
+                    url.set("Airos478963.github.com/KMPNotifier/")
                     issueManagement {
                         system.set("Github")
                         url.set("https://github.com/Airos478963/KMPNotifier/issues")
