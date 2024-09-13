@@ -76,6 +76,7 @@ internal class IosNotifier(
             didReceiveNotificationResponse: UNNotificationResponse,
             withCompletionHandler: () -> Unit,
         ) {
+            print("[ANDORRA] Notificación 1")
             val notificationContent = didReceiveNotificationResponse.notification.request.content
             NotifierManager.onUserNotification(notificationContent)
             NotifierManager.onNotificationClicked(notificationContent)
@@ -87,6 +88,7 @@ internal class IosNotifier(
             willPresentNotification: UNNotification,
             withCompletionHandler: (UNNotificationPresentationOptions) -> Unit,
         ) {
+            print("[ANDORRA] Notificación 2")
             val notificationContent = willPresentNotification.request.content
             NotifierManager.onUserNotification(notificationContent)
             if (NotifierManager.shouldShowNotification(notificationContent)) withCompletionHandler(
