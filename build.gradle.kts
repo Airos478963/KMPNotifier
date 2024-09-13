@@ -20,7 +20,7 @@ plugins {
 
 
 allprojects {
-    group = "io.github.mirzemehdi"
+    group = "io.github.Airos478963"
     version = project.properties["kmpNotifierVersion"] as String
 
     val gpgKeySecret = gradleLocalProperties(rootDir).getProperty("gpgKeySecret")
