@@ -3,7 +3,7 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
     repositories {
-        maven {url 'https://jitpack.io'}
+        maven("https://jitpack.io")
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         google()
         gradlePluginPortal()
@@ -13,7 +13,7 @@ pluginManagement {
 
 dependencyResolutionManagement {
     repositories {
-        maven {url 'https://jitpack.io'}
+        maven ("https://jitpack.io")
         google()
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
